@@ -1,5 +1,7 @@
-# agora-token-builder
+# agora-token-builder 
 Agora Token Builder generates tokens for Agora Client SDKs. This library is a cleaned-up and composer-ready version of the [official PHP SDK](https://github.com/AgoraIO/Tools/tree/master/DynamicKey/AgoraDynamicKey/php).
+
+[![Build Status](https://travis-ci.org/monyxie/agora-token-builder.svg?branch=master)](https://travis-ci.org/monyxie/agora-token-builder)
 
 ## Installation
 ```
