@@ -3,10 +3,10 @@
 namespace Monyxie\Agora\TokenBuilder;
 
 /**
- * Class TokenBuilder
+ * Class TokenFactory
  * @package Monyxie\Agora\TokenBuilder
  */
-class TokenBuilder
+class TokenFactory
 {
     /**
      * @var
@@ -18,7 +18,7 @@ class TokenBuilder
     private $appCertificate;
 
     /**
-     * TokenBuilder constructor.
+     * TokenFactory constructor.
      * @param $appId
      * @param $appCertificate
      */
@@ -32,11 +32,12 @@ class TokenBuilder
      * @param string|null $channelName
      * @param string|null $uid
      * @param array|null $privileges
+     * @param int $expireTimestamp
      * @return Token
      */
-    public function create(string $channelName = null, string $uid = null, array $privileges = null)
+    public function create(string $channelName = null, string $uid = null, array $privileges = null, int $expireTimestamp = null)
     {
-        return new Token($this->appId, $this->appCertificate, $channelName, $uid, $privileges);
+        return new Token($this->appId, $this->appCertificate, $channelName, $uid, $privileges, $expireTimestamp);
     }
 
     /**
