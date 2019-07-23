@@ -17,15 +17,15 @@ class Token
     /**
      * @var string
      */
-    public $appCertificate;
+    private $appCertificate;
     /**
      * @var string
      */
-    public $channelName;
+    private $channelName;
     /**
      * @var string
      */
-    public $uid;
+    private $uid;
     /**
      * @var string
      */
