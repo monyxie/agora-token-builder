@@ -6,6 +6,7 @@ class Role
 {
     /**
      * 已废弃。通信模式的通话方。享有权限与角色 Role_Publisher 相同
+     * @deprecated
      */
     const ATTENDEE = 0;
     /**
@@ -16,11 +17,15 @@ class Role
      *  (默认) 直播模式下的观众（AUDIENCE）
      */
     const SUBSCRIBER = 2;
-    /*
+    /**
      * 已废弃。享有权限与角色 Role_Publisher 相同
+     * @deprecated
      */
     const ADMIN = 101;
 
+    /**
+     * @deprecated
+     */
     const PRIVILEGES_ATTENDEE = [
         Privilege::JOIN_CHANNEL => 0,
         Privilege::PUBLISH_AUDIO_STREAM => 0,
@@ -40,6 +45,9 @@ class Role
         Privilege::INVITE_PUBLISH_DATA_STREAM => 0
     ];
 
+    /**
+     * @deprecated
+     */
     const PRIVILEGES_ADMIN = [
         Privilege::JOIN_CHANNEL => 0,
         Privilege::PUBLISH_AUDIO_STREAM => 0,
